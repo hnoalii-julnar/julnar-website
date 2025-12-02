@@ -1,0 +1,214 @@
+
+<html>
+<head>
+<title>تفاصيل المنتج</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f7f2f3;
+        direction: rtl;
+        padding: 20px;
+        text-align: center;}
+    header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* يوسّط الشعار أفقياً */
+    align-items: center;
+    position: fixed; /* يبقى ثابت عند التمرير */
+    top: -48;
+    left: 0;
+   
+    background-color: rgba(250,245,245,0.1);
+    padding: 5px;
+   
+}
+
+header img {
+    height:150px; /* حجم الشعار الكبير */
+}
+
+    h1 {
+        color: #b3003c;
+        font-size: 28px;
+        margin-bottom: 20px;
+        animation: fade 1s ease;
+    }
+
+    .big-box {
+        background: #ffffffdd;
+        width: 90%;
+        margin: 0 auto 30px auto;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px #ccc;
+        animation: fadeUp 1s ease;
+        line-height: 1.9;
+    }
+
+    .big-box img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+        color: #8a0030;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    ul {
+        text-align: right;
+        list-style: none;
+        padding-right: 15px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-right: 25px;
+        font-size: 18px;
+    }
+
+    /* دائرة النقطة */
+    ul li::before {
+        content: "•";
+        position: absolute;
+        right: 0;
+        color: #b3003c;
+        font-size: 25px;
+        top: -3px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #b3003c;
+        padding: 12px 25px;
+        color: #fff;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 18px;
+        margin-top: 15px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #7c0028;
+    }
+
+    @keyframes fade {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeUp {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* صندوق الطلب */
+    .order-box {
+        background: #ffffffee;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px #ccc;
+        width: 90%;
+        margin: 0 auto 30px auto;
+    }
+
+    .order-box img {
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    .order-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .order-details input[type="number"] {
+        width: 60px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+</style>
+</head>
+
+<body>
+<header>
+    <img src="logo.png" alt="شعار الموقع">
+</header>
+<h1>تفاصيل شوكولاتة الرمان</h1>
+
+<!-- صورة كبيرة -->
+<div class="big-box">
+    <img src="main.png" alt="صورة كبيرة للمنتج">
+
+    <div class="title">نبذة عن المنتج</div>
+    <p>
+        شوكولاتة الرمان ليست مجرد قطعة حلوى… 
+        إنها تجربة تجمع بين الفخامة والطعم الفريد. 
+        تم تصميمها بعناية لتقدم لكِ نكهة لا تُنسى، تجمع نعومة الشوكولاتة مع لمسة حامضة ولطيفة من خلاصة الرمان.
+    </p>
+</div>
+
+<div class="big-box">
+    <div class="title">قصة ابتكار المنتج</div>
+    <p>
+        تم ابتكار هذه الشوكولاتة بعد فكرة بسيطة: 
+        *“لماذا لا ندمج فاكهة عربية أصيلة مثل الرمان مع الشوكولاتة الفاخرة؟”* 
+        وهكذا بدأت رحلة تطوير منتج يعبّر عن الأصالة والحداثة معًا.
+    </p>
+</div>
+
+<div class="big-box">
+    <div class="title">مميزات شوكولاتة الرمان</div>
+    <ul>
+        <li>نكهة فريدة تجمع الطعم الحلو مع اللمسة الفاكهية المنعشة.</li>
+        <li>شكل أنيق مناسب كهدايا راقية.</li>
+        <li>مصنوعة من مكونات طبيعية مختارة بعناية.</li>
+        <li>خفيفة، لذيذة، غير ثقيلة على المعدة.</li>
+        <li>تناسب أجواء الجلسات والمناسبات.</li>
+    </ul>
+</div>
+
+<div class="big-box">
+    <div class="title">معلومة لطيفة 🍫✨</div>
+    <p>
+        الرمان غني بمضادات الأكسدة، 
+        ودمجه مع الشوكولاتة يمنح مذاقًا مختلفًا تمامًا، 
+        يجمع بين الصحة واللذة والطابع الخاص.
+    </p>
+</div>
+
+<!-- صندوق الطلب -->
+<div class="order-box">
+    <div class="title">اطلب الآن 🛒</div>
+    <p>اختر الكمية واضغطي على زر الشراء لإضافة المنتج إلى طلبك</p>
+   
+    <div class="order-details">
+        <img src="main2.png" alt="صورة المنتج">
+        <div style="font-weight:bold; font-size:18px;">شوكولاتة الرمان الفاخرة</div>
+        <div style="color:#8a0030; font-size:16px;">السعر: 2$ لكل قطعة</div>
+        <label for="quantity">الكمية:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1">
+        <a href="page3.html" class="btn">أضف للطلب</a>
+    </div>
+</div>
+<div style="margin: 30px 0;">
+    <a href="page2.html" style="text-decoration: none; color: #b3003c; font-size: 20px;">
+        &#8592; العودة للصفحة السابقة
+    </a>
+  <a href="index.html" style="text-decoration: none; color: #b3003c; font-size: 20px;">
+        &#8592; العودة للصفحة الرئيسية
+    </a>
+</div>
+</body>
+</html>

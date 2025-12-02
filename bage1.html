@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صور المنتج</title>
+
+    <style>
+        /* التنسيقات العامة */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #ffe6e6; /* لون خلفية فاتح */
+            text-align: center;
+        }
+
+        /* تنسيق اللوجو */
+        .logo {
+            position: fixed;
+            top: -30px;
+            right: -10px;
+            z-index: 1000;
+        }
+
+        .logo img {
+            width: 160px;
+            height: auto;
+        }
+       
+        /* تنسيق العنوان H1 */
+        h1 {
+            color: #b02946; /* لون أحمر غامق */
+            height: auto;
+            margin-top: 50px; /* زيادة مسافة علوية لتجنب اللوجو */
+        }
+       
+        /* تنسيق حاوية الصور (الجاليري) */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* الأهم لإنزال الصور صفين */
+            justify-content: center;
+            gap: 25px; /* المسافة بين الصور */
+            margin-top: 30px;
+            max-width: 900px; /* لضمان الترتيب في الشاشات الكبيرة */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* تنسيق الصور داخل الجاليري */
+        .gallery img {
+            /* هذا هو الحل الصحيح لصفين: 48% تترك مساحة للـ gap */
+            width: 48%;
+            max-width: 100%; /* ضمان مرونة الحجم */
+            box-sizing: border-box; /* لضمان حساب العرض بشكل دقيق */
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+       
+        a {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            background: #b02946;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+    </div>
+
+    <h1>صور منتج شوكولاتة الرمان</h1>
+
+    <div class="gallery">
+        <img src="image1.jpg" alt="صورة 1">
+        <img src="image2.jpg" alt="صورة 2">
+        <img src="image3.png" alt="صورة 3">
+        <img src="image4.jpg" alt="صورة 4">
+    </div>
+
+    <a href="index.html">رجوع للصفحة الرئيسية</a>
+    <a href="page4.html">هنا معلومات التواصل</a>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+
+<html>
+<head>
+
+<title>معلومات المنتج</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background-color: #faf5f5;
+        direction: rtl;
+        padding: 20px;
+    }
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* يوسّط الشعار أفقياً */
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed; /* يبقى ثابت عند التمرير */
+    top: -48;
+    left: 0;
+   
+    background-color: rgba(250,245,245,0.5);
+    padding: 5px;
+   
+}
+
+header img {
+    height:150px; /* حجم الشعار الكبير */
+}
+
+body {
+    padding-top: 80px; /* مسافة أسفل الشعار */
+}
+
+    h1 {
+        text-align: center;
+        color: #b3003c;
+        margin-bottom: 15px;
+    }
+
+    .info-box {
+        background: #ffffffee;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px #ddd;
+        width: 90%;
+        margin: 0 auto 30px auto;
+        line-height: 1.8;
+        font-size: 18px;
+        color: #444;
+    }
+
+    .table-box {
+        width: 90%;
+        margin: 0 auto 30px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px #ddd;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 17px;
+    }
+
+    td, th {
+        padding: 12px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    th {
+        background: #b3003c;
+        color: #fff;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto 30px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px #ddd;
+    }
+
+    .title {
+        color: #b3003c;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        padding: 8px 0;
+        color: #444;
+    }
+
+    .btn {
+        display: block;
+        width: fit-content;
+        margin: 20px auto 0;
+        background: #b3003c;
+        padding: 12px 25px;
+        border-radius: 30px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #8a002f;
+    }
+</style>
+</head>
+
+<body> 
+
+<header>
+    <img src="logo.png" alt="شعار الموقع">
+</header>
+
+
+<h1>نبذه عن المنتج  </h1>
+
+<!-- صندوق معلومات عامة -->
+<div class="info-box">
+    شوكولاتة الرمان هي مزيج فاخر يجمع بين طعم الشوكولاتة الناعم ونكهة الرمان الفريدة،
+    مُصممة لتقديم تجربة مختلفة ومليئة بالإحساس. 
+    تمتاز بنكهة متوازنة، وسكر خفيف، ولمسة فاكهية تضيف لها جمالًا وتميّزًا عن باقي الأنواع.
+</div>
+
+<!-- جدول بيانات المنتج -->
+<div class="table-box">
+    <h2 class="title">بيانات المنتج</h2>
+    <table>
+        <tr>
+            <th>العنصر</th>
+            <th>المعلومة</th>
+        </tr>
+        <tr>
+            <td>الاسم</td>
+            <td>JULNAR</td>
+        </tr>
+        <tr>
+            <td>الوزن</td>
+            <td>20 جرام للقطعة</td>
+        </tr>
+        <tr>
+            <td>الصنف</td>
+            <td>شوكولاتة محشية بنكهة الرمان</td>
+        </tr>
+        <tr>
+            <td>التخزين</td>
+            <td>يحفظ في مكان بارد وجاف</td>
+        </tr>
+    </table>
+</div>
+
+<!-- بطاقة المكونات -->
+<div class="card">
+    <h2 class="title">المكونات</h2>
+    <ul>
+        <li>شوكولاتة داكنة عالية الجودة</li>
+        <li>مستخلص الرمان الطبيعي</li>
+        <li>زبدة الكاكاو</li>
+        <li>سكر بنسبة منخفضة</li>
+        <li>نكهات طبيعية</li>
+    </ul>
+</div>
+
+
+
+<a class="btn" href="page3.html">لمعرفة المزيد انقر هنا </a>
+<div style="margin: 30px 0; text-align: center">
+    <a href="index.html" style="text-decoration: none; color: #b3003c; font-size: 20px;">
+        &#8592; العودة للصفحة الرئيسية
+    </a>
+</div>
+</body>
+</html>
